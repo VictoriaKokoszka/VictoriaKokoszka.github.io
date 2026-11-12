@@ -4,32 +4,32 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Victoria Kokoszka | Supply Chain Portfolio</title>
-<meta name="description" content="Portfolio of Victoria Kokoszka, a Supply Chain Management student at Rutgers Business School focused on e-commerce, procurement, and logistics.">
+<meta name="description" content="Portfolio of Victoria Kokoszka, a Supply Chain Management student at Rutgers Business School who loves seeing how things are made and helping people, with a focus on e-commerce, procurement, and logistics.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500..700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #faf6f8;
+    --bg: #f5f7fb;
     --surface: #ffffff;
-    --ink: #2a2028;
-    --muted: #6a5a66;
-    --accent: #7e4f70;
+    --ink: #1d2236;
+    --muted: #5a6480;
+    --accent: #3f5496;
     --accent-ink: #ffffff;
-    --blush: #f0e4ea;
-    --lilac: #e8e1ea;
-    --peach: #f4e8e6;
-    --glow: #b48ba5;
-    --line: #e9dde3;
-    --shadow: 0 10px 30px -12px rgba(126, 79, 112, .22);
+    --blush: #e3e9f6;
+    --lilac: #dde4f2;
+    --peach: #e8ecf3;
+    --glow: #8497c9;
+    --line: #dde3ef;
+    --shadow: 0 10px 30px -12px rgba(63, 84, 150, .25);
     --serif: "Fraunces", Georgia, "Times New Roman", serif;
     --sans: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
-      --bg: #1b1419; --surface: #261c24; --ink: #f3ecf0; --muted: #bfaeb9;
-      --accent: #d3a5c4; --accent-ink: #2a1424; --blush: #33242f; --lilac: #2c2230;
-      --peach: #342627; --glow: #b98aa9; --line: #3b2d38;
+      --bg: #121726; --surface: #1a2133; --ink: #eef1f8; --muted: #a9b3cc;
+      --accent: #9db1e6; --accent-ink: #121a33; --blush: #232c45; --lilac: #1f2840;
+      --peach: #252d44; --glow: #7d92cc; --line: #2e3855;
       --shadow: 0 10px 30px -12px rgba(0, 0, 0, .55);
     }
   }
@@ -69,19 +69,13 @@
   .hero .wrap { position: relative; z-index: 1; display: grid; grid-template-columns: 1.4fr 1fr; gap: 56px; align-items: center; }
   .pill { display: inline-block; margin: 0 0 20px; padding: 6px 16px; background: var(--surface); border: 1px solid var(--line); border-radius: 999px; font-size: .85rem; font-weight: 600; color: var(--accent); box-shadow: var(--shadow); }
   h1 { font-family: var(--serif); font-size: clamp(3rem, 7vw, 5rem); line-height: 1; font-weight: 600; margin: 0 0 20px; letter-spacing: -.02em; }
-  .intro { font-size: 1.2rem; line-height: 1.55; color: var(--ink); max-width: 34ch; margin: 0 0 30px; }
+  .intro { font-size: 1.2rem; line-height: 1.55; color: var(--ink); max-width: 36ch; margin: 0 0 30px; }
   .actions { display: flex; flex-wrap: wrap; gap: 12px; }
   .btn { display: inline-block; padding: 12px 26px; border-radius: 999px; font-weight: 600; font-size: .95rem; text-decoration: none; border: 1.5px solid var(--accent); transition: transform .2s, box-shadow .2s, background .2s, color .2s; }
   .btn.primary { background: var(--accent); color: var(--accent-ink); box-shadow: 0 8px 20px -8px var(--accent); }
   .btn.primary:hover { transform: translateY(-2px); box-shadow: 0 12px 24px -8px var(--accent); }
   .btn.ghost { color: var(--accent); background: var(--surface); }
   .btn.ghost:hover { background: var(--accent); color: var(--accent-ink); transform: translateY(-2px); }
-
-  .spark { position: absolute; color: var(--glow); line-height: 1; pointer-events: none; animation: twinkle 3.6s ease-in-out infinite; }
-  .spark.s1 { font-size: 2rem; top: -8px; right: 4%; }
-  .spark.s2 { font-size: 1.3rem; bottom: 6%; right: 42%; animation-delay: 1.2s; }
-  .spark.s3 { font-size: 1rem; top: 14%; left: 46%; animation-delay: 2.1s; }
-  @keyframes twinkle { 0%, 100% { opacity: .35; transform: scale(.85) rotate(0); } 50% { opacity: 1; transform: scale(1.1) rotate(12deg); } }
 
   /* Headshot frame */
   .portrait { margin: 0; position: relative; aspect-ratio: 4 / 5; max-width: 340px; width: 100%; justify-self: end;
@@ -95,7 +89,7 @@
   section.block { padding: 64px 0; }
   .row { display: grid; grid-template-columns: 200px 1fr; gap: 24px 48px; }
   h2 { font-family: var(--serif); font-size: 2.1rem; line-height: 1.1; margin: 0; font-weight: 600; letter-spacing: -.01em; }
-  h2::after { content: "\2726"; display: block; margin-top: 10px; font-family: var(--sans); font-size: 1rem; color: var(--glow); }
+  h2::after { content: ""; display: block; width: 36px; height: 3px; margin-top: 14px; border-radius: 3px; background: var(--glow); }
   h3 { font-size: 1.05rem; margin: 0; font-weight: 600; }
   .scroll-target { scroll-margin-top: 90px; }
 
@@ -105,15 +99,15 @@
   dl.facts dt { color: var(--accent); font-size: .85rem; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; padding-top: 3px; }
   dl.facts dd { margin: 0; }
 
-  .love { margin-top: 28px; padding: 28px 30px; border-radius: 28px; background: linear-gradient(135deg, var(--blush), var(--lilac)); border: 1px solid var(--line); position: relative; overflow: hidden; }
-  .love::after { content: "\2726"; position: absolute; top: 14px; right: 22px; font-size: 1.6rem; color: var(--glow); }
+  .love { margin-top: 28px; padding: 28px 30px; border-radius: 28px; background: linear-gradient(135deg, var(--blush), var(--lilac)); border: 1px solid var(--line); }
+  .love + .love { margin-top: 18px; }
   .love .eyebrow { display: block; margin: 0 0 6px; font-size: .78rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); }
   .love h3 { font-family: var(--serif); font-size: 1.55rem; font-weight: 600; line-height: 1.2; margin: 0 0 12px; }
   .love p { margin: 0 0 12px; max-width: 58ch; }
   .love p:last-child { margin-bottom: 0; }
 
   /* Skills */
-  .skills { margin: 0; padding: 0; list-style: none; background: var(--surface); border: 1px solid var(--line); border-radius: 24px; box-shadow: var(--shadow); padding: 8px 26px; }
+  .skills { margin: 0; padding: 8px 26px; list-style: none; background: var(--surface); border: 1px solid var(--line); border-radius: 24px; box-shadow: var(--shadow); }
   .skills > li { display: grid; grid-template-columns: 190px 1fr; gap: 8px 20px; padding: 18px 0; border-bottom: 1px dashed var(--line); }
   .skills > li:last-child { border-bottom: 0; }
   .skills .cat { font-weight: 600; }
@@ -129,13 +123,13 @@
   .job ul { margin: 0; padding: 0; list-style: none; max-width: 64ch; }
   .job li { position: relative; padding-left: 22px; margin-bottom: 8px; }
   .job li:last-child { margin-bottom: 0; }
-  .job li::before { content: "\2726"; position: absolute; left: 0; top: 1px; font-size: .75rem; color: var(--glow); }
+  .job li::before { content: ""; position: absolute; left: 4px; top: .7em; width: 6px; height: 6px; border-radius: 50%; background: var(--glow); }
 
   /* Projects */
   .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 22px; margin: 0; padding: 0; list-style: none; }
   .project { position: relative; overflow: hidden; background: var(--surface); border: 1px solid var(--line); border-radius: 26px; padding: 32px 24px 24px; display: flex; flex-direction: column; gap: 12px; box-shadow: var(--shadow); transition: transform .25s; }
   .project:hover { transform: translateY(-4px); }
-  .project::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 7px; background: linear-gradient(90deg, var(--accent), var(--glow), #d4b9c9); }
+  .project::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 7px; background: linear-gradient(90deg, var(--accent), var(--glow), #b9c6e4); }
   .project p { margin: 0; color: var(--muted); }
   .project .chips { margin-top: auto; }
   .project .chips li { font-size: .8rem; padding: 2px 11px; }
@@ -184,13 +178,10 @@
   <!-- Hero: headshot + one-sentence introduction -->
   <section class="hero">
     <div class="wrap">
-      <span class="spark s1" aria-hidden="true">&#10022;</span>
-      <span class="spark s2" aria-hidden="true">&#10022;</span>
-      <span class="spark s3" aria-hidden="true">&#10022;</span>
       <div>
         <p class="pill">Supply chain &middot; E-commerce &middot; Retail &amp; fashion</p>
         <h1>Victoria Kokoszka</h1>
-        <p class="intro">Supply chain student at Rutgers Business School who turns e-commerce and inventory data into clear, accurate decisions.</p>
+        <p class="intro">Supply chain student at Rutgers Business School who loves seeing how products are made and uses data to get them to the people who need them.</p>
         <div class="actions">
           <a class="btn primary" href="#projects">View projects</a>
           <a class="btn ghost" href="https://www.linkedin.com/in/victoria-kokoszka-b5422127b" target="_blank" rel="noopener noreferrer">LinkedIn</a>
@@ -209,14 +200,21 @@
     <div class="wrap row">
       <h2>About</h2>
       <div class="about">
-        <p>I'm a Supply Chain Management major at Rutgers Business School (Class of 2028) with a strong interest in the operations behind the products we buy. Every product on a shelf or a screen reflects careful planning, sourcing, and shipping, and I enjoy helping that process run smoothly.</p>
-        <p>I built on that interest last summer, managing product catalogs and inventory data across Amazon, Walmart, and eBay. Today I bring the same attention to detail to my role as Treasurer of CHAARG, where I plan events and manage the chapter budget, and to the other communities I'm part of on campus.</p>
-        <p>I'm seeking internships in supply chain, logistics, procurement, merchandising, and e-commerce in the New York City area. If you're building something where data, products, and people meet, I'd welcome the chance to connect.</p>
+        <p>I’m a Supply Chain Management major at Rutgers Business School (Class of 2028) driven by two things: helping people and seeing how things are made. I love following a product from raw materials and production all the way to the person who uses it, because behind every shelf or screen is careful planning, sourcing, and shipping that makes someone’s day a little easier.</p>
+        <p>I built on that interest last summer, managing product catalogs and inventory data across Amazon, Walmart, and eBay. Today I bring the same attention to detail to my role as Treasurer of CHAARG, where I plan events and manage the chapter budget, and to the other communities I’m part of on campus.</p>
+        <p>I’m seeking internships in supply chain, logistics, procurement, merchandising, and e-commerce in the New York City area. If you’re building something where data, products, and people meet, I’d welcome the chance to connect.</p>
+
+        <aside class="love" aria-labelledby="drive-title">
+          <span class="eyebrow">What drives me</span>
+          <h3 id="drive-title">Helping people and seeing how things get made</h3>
+          <p>I’m at my best when my work helps someone else. I’m fascinated by the means of production, the factories, warehouses, and handoffs that turn raw materials into finished products, and I want to see that process up close and make it work better for the people on both ends of it.</p>
+          <p>Health and staying active are a big part of my life, and I love helping others feel their best too. I’ve written for mental health blogs because I care about people’s wellbeing, and I stay close to that world through CHAARG.</p>
+        </aside>
 
         <aside class="love" aria-labelledby="love-title">
           <span class="eyebrow">Beyond the supply chain</span>
           <h3 id="love-title">A genuine passion for retail and fashion</h3>
-          <p>I've always been drawn to how a brand builds its world and gets a collection to the right store at the right time. Inside LVMH let me explore both creation and branding and operations and supply chain, and it reinforced my belief that great products need great operations behind them.</p>
+          <p>I’ve always been drawn to how a brand builds its world and gets a collection to the right store at the right time. Inside LVMH let me explore both creation and branding and operations and supply chain, and it reinforced my belief that great products need great operations behind them.</p>
         </aside>
 
         <dl class="facts">
@@ -224,6 +222,7 @@
           <dt>Education</dt><dd>B.S. in Supply Chain Management, Rutgers Business School, expected May 2028</dd>
           <dt>Certificate</dt><dd>Inside LVMH (2026): Creation &amp; Branding, Operations &amp; Supply Chain</dd>
           <dt>Languages</dt><dd>Polish (fluent)</dd>
+          <dt>Interests</dt><dd>Health and wellness, staying active, writing, retail &amp; fashion</dd>
           <dt>Involvement</dt><dd>Rutgers CHAARG, FORM, Polish Club, and Women in Business</dd>
         </dl>
       </div>
@@ -262,7 +261,7 @@
         <li>
           <span class="cat">Leadership &amp; communication</span>
           <ul class="chips">
-            <li>Team leadership</li><li>Written communication</li><li>Workshop facilitation</li><li>Polish (fluent)</li>
+            <li>Team leadership</li><li>Written communication</li><li>Blog writing</li><li>Workshop facilitation</li><li>Polish (fluent)</li>
           </ul>
         </li>
       </ul>
@@ -337,7 +336,7 @@
   <div class="wrap row">
     <h2>Contact</h2>
     <div>
-      <p>I'm open to internships in supply chain, logistics, procurement, merchandising, and e-commerce. Email me or connect on LinkedIn.</p>
+      <p>I’m open to internships in supply chain, logistics, procurement, merchandising, and e-commerce. If you care about both the products and the people they serve, I’d love to hear from you. Email me or connect on LinkedIn.</p>
       <div class="actions">
         <a class="btn primary" href="mailto:vickokotoria@gmail.com">Email me</a>
         <a class="btn ghost" href="https://www.linkedin.com/in/victoria-kokoszka-b5422127b" target="_blank" rel="noopener noreferrer">LinkedIn profile</a>
